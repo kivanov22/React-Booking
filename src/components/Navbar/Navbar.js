@@ -7,8 +7,8 @@ export const Navbar = () => {
         <div className="navContainer">
             <span className="logo">IvanovBooking</span>
             <div className="navItems">
-                <div className="navButton">Login</div>
-                <div className="navButton">Register</div>
+                <button className="navButton">Login</button>
+                <button className="navButton">Register</button>
             </div>
         </div>
     </div>
