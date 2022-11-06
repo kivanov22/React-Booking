@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .fp {
     width: 100%;
     max-width: 1024px;
@@ -28,8 +30,17 @@
         font-weight: 500;
     }
     
-    .fpRating {
-        
+    .fpRating > button {
+        background-color: $background-darkblue;
+        color: white;
+        border: none;
+        padding: 3px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .fpRating > span {
+        font-size: 14px;
     }
 }
 
