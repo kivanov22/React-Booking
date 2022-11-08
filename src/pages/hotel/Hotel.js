@@ -35,6 +35,18 @@ export const Hotel = () => {
     setOpen(true);
   }
 
+  const handleMove = (direction) =>{
+    let newSlideNumber;
+
+    if(direction === "l"){
+      newSlideNumber = slideNumber === 0 ? 5 : slideNumber -1;
+    }else {
+      newSlideNumber = slideNumber === 5 ? 0 : slideNumber +1;
+    }
+
+    setSlideNumber(newSlideNumber);
+  }
+
   return (
     <div>
       <Navbar />
