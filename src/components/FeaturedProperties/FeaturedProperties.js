@@ -1,7 +1,10 @@
 import React from "react";
+import useFetch from "../../hooks/useFetch.js";
 import "./FeaturedProperties.scss";
 
 const FeaturedProperties = () => {
+  const {data,loading,error} = useFetch("/hotels/countByType");
+
   return (
     <div className="fp">
       <div className="fpItem">
