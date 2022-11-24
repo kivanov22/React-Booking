@@ -30,9 +30,9 @@ mongoose.connection.on("connected",()=> {
 
 
 //middlewares
-//In api can use any body 
 app.use(cors())
 app.use(cookieParser());
+//In api can use any body 
 app.use(express.json());
 
 
