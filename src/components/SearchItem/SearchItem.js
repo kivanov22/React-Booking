@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./SearchItem.scss"
 
-const SearchItem = () => {
+const SearchItem = ({item}) => {
   return (
     <div className='searchItem'>
-      <img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-apartments_300/9f60235dc09a3ac3f0a93adbc901c61ecd1ce72e.jpg" alt="" className="siImg" />
+      <img src={item.photos[0]} alt="" className="siImg" />
       <div className="siDesc">
-      <h1 className="siTitle">Tower Street Apartments</h1>
-      <span className="siDistance">500m from center</span>
+      <h1 className="siTitle">{item.title}</h1>
+      <span className="siDistance">{item.distance}</span>
       <span className="siTaxiOp">Free airport taxi</span>
       <span className="sibSubTitle">Studio Apartment with Air Conditioning</span>
       <span className="siFeatures">
-        Entire studio · 1 bathroom · 21m2 1 full bed
+        {item.desc}
       </span>
       <span className="siCancelOp">Free Cancellation</span>
       <span className="siCancelOpSubtitle">
@@ -19,14 +20,16 @@ const SearchItem = () => {
       </span>
       </div>
       <div className="siDetails">
-      <div className="siRating">
+      {item.rating && <div className="siRating">
         <span>Excellent</span>
-        <button>8.9</button>
-      </div>
+        <button>{item.rating}</button>
+      </div>}
       <div className="siDetailTexts">
-        <span className="siPrice">$123</span>
+        <span className="siPrice">${item.cheapestPrice}</span>
         <span className="siTaxOp">Includes taxes and fees</span>
+        <Link to={`/hotels/${item._id}`}>
         <button className='siCheckButton'>See availability</button>
+        </Link>
       </div>
       </div>
     </div>
