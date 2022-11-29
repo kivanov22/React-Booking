@@ -16,6 +16,7 @@ import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { SearchContext } from "../../context/SearchContext.js";
+import { AuthContext } from "../../context/AuthContext.js";
 
 export const Header = ({ type }) => {
   const [destination, setDestination] = useState('');
@@ -36,6 +37,8 @@ export const Header = ({ type }) => {
   });
 
   const navigate = useNavigate();
+
+  const { user} = useContext(AuthContext);
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {
@@ -91,7 +94,7 @@ export const Header = ({ type }) => {
               Get rewarded for your travels - unclock instant savings of 10% or
               more with a free IvanovBooking account
             </p>
-            <button className="headerBtn">Sign in / Register</button>
+            {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
