@@ -14,9 +14,28 @@
 
 ## Project Screenshots
 
-Homepage Screenshot
+Project Screenshots
 
+- Homepage
 ![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking-photo.png)
+
+- Homepage with calendar
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking2.png)
+
+- Homepage middle part
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking3.png)
+
+- Homepage footer
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking4.png)
+
+- Hotel Listings with side filter
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking6.png)
+
+- Hotel Information page
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking7.png)
+
+- Reserving rooms modal
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking8.png)
 ---
 
 
