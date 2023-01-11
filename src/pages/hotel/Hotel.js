@@ -28,9 +28,8 @@ export const Hotel = () => {
   const { data, loading, error, reFetch } = useFetch(`/hotels/find/${id}`);
 
   const { dates, options } = useContext(SearchContext);
-  const { user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
-
 
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
 
@@ -59,13 +58,13 @@ export const Hotel = () => {
     setSlideNumber(newSlideNumber);
   };
 
-  const handleClick =()=>{
-    if(user){
+  const handleClick = () => {
+    if (user) {
       setOpenModal(true);
-    }else{
-      navigate("/login")
+    } else {
+      navigate("/login");
     }
-  }
+  };
 
   return (
     <div>
@@ -115,7 +114,7 @@ export const Hotel = () => {
             </span>
             <div className="hotelImages">
               {data.photos?.map((photo, i) => (
-                <div className="hotelImgWrapper">
+                <div className="hotelImgWrapper" key={i}>
                   <img
                     onClick={() => handleOpen(i)}
                     src={photo}
@@ -148,7 +147,7 @@ export const Hotel = () => {
           <Footer />
         </div>
       )}
-      {openModal && <Reserve setOpen={setOpenModal} hotelId={id}/>}
+      {openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
     </div>
   );
 };
