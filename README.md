@@ -16,7 +16,7 @@
 
 Homepage Screenshot
 
-![](https://github.com/kivanov22/React-Booking/blob/main/public/app%20pics/booking-photo.png)
+![](https://github.com/kivanov22/React-Booking/blob/main/public/photo/booking-photo.png)
 ---
 
 
