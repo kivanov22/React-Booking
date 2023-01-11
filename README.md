@@ -14,9 +14,9 @@
 
 ## Project Screenshots
 
-Here is some project screenshots ..
+Homepage Screenshot
 
-![Homepage Screenshot](public/app pics/booking-photo.png?raw=true "Homepage")
+![](https://github.com/kivanov22/React-Booking/blob/main/public/app%20pics/booking-photo.png)
 ---
 
 
@@ -27,7 +27,7 @@ Here is some project screenshots ..
 - Search for hotels.
 - Login/Register
 - Admin functionality
-
+- Used React admin panel to fill the hotels,rooms,users.
 ---
 
 ## Key Technologies
@@ -42,13 +42,6 @@ Here is some project screenshots ..
 - Express
 ---
 
-## Test Account
-
-- Admin:
-- username: john2
-- password: 12345
-
----
 
 ### `npm start`
 
